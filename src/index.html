@@ -1,13 +1,56 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>StockMarketSimulator</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
+
 <body>
   <app-root></app-root>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+
+    import {getAnalytics} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD7dpUtAjN9s3WH1xn6rDqQxY1hJsh9oCo",
+
+      authDomain: "stock-market-simulator-20a14.firebaseapp.com",
+
+      databaseURL:
+        "https://stock-market-simulator-20a14-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+      projectId: "stock-market-simulator-20a14",
+
+      storageBucket: "stock-market-simulator-20a14.appspot.com",
+
+      messagingSenderId: "349731210657",
+
+      appId: "1:349731210657:web:5177358d4455666f3e37e0",
+
+      measurementId: "G-EDKJ9KPPLS",
+    };
+
+    // Initialize Firebase
+
+    const app = initializeApp(firebaseConfig);
+
+    const analytics = getAnalytics(app);
+  </script>
 </body>
+
 </html>

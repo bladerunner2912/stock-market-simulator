@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "stock-market-simulator-20a14": {
+      "hosting": {
+        "stock-market-simulator": [
+          "stock-market-simulator-20a14"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "stock-market-simulator-20a14"
+  }
+}
